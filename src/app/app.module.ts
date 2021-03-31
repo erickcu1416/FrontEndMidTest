@@ -11,12 +11,16 @@ import { HeaderComponent } from './components/header/header.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {NgbCarouselModule} from '@ng-bootstrap/ng-bootstrap';
+import { SectionComponent } from './components/section/section.component';
+import { NewsFeedComponent } from './components/news-feed/news-feed.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    BannerComponent
+    BannerComponent,
+    SectionComponent,
+    NewsFeedComponent
   ],
   imports: [
     BrowserModule,

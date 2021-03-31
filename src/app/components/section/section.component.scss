@@ -1,0 +1,55 @@
+.header-section {
+    margin-top: 4rem;
+    h2 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: normal;
+        font-size: 35px;
+    }
+    h3 {
+        margin-top: 1rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        font-size: 17px;
+    }
+}
+
+.items-description {
+    margin-top: 4rem;
+}
+
+.box-item-img {
+    margin: auto;
+    padding: auto;
+}
+
+.box-item-s {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: #4eb9f4;
+
+    img {
+        margin: 35px 0px 0px 45px;
+        width: 90px;
+    }
+
+    h4 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        font-size: 17px;
+        color: #fff;
+        margin-top: 5px;
+    }
+}
+
+.camera-color {
+    background-color: #6fc125 !important;
+}
+
+.beer-color {
+    background-color: #ff5649 !important;
+}
+
+.device-color {
+    background-color: #e48f23 !important;
+}
