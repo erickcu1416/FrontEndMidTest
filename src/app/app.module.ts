@@ -13,6 +13,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {NgbCarouselModule} from '@ng-bootstrap/ng-bootstrap';
 import { SectionComponent } from './components/section/section.component';
 import { NewsFeedComponent } from './components/news-feed/news-feed.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NewsFeedComponent } from './components/news-feed/news-feed.component';
     HeaderComponent,
     BannerComponent,
     SectionComponent,
-    NewsFeedComponent
+    NewsFeedComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
