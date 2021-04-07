@@ -32,4 +32,21 @@
     width: 100%;
     height: 400px;
   }
+
+  .box-img img{
+    width: auto;
+    height: 400px;
+  }
+
+  .banner-content {
+    h3 {
+        font-size: 40px ;
+        font-family: Segoe UI;
+    }
+  
+    p {
+      font-size: 15px ;
+      font-family: Universal;
+  }
+  }
 }

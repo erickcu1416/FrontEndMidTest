@@ -1,0 +1,48 @@
+<div class="modal-header">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" (click)="setTab('Login')" [ngClass]="{'active': tab === 'Login'}" aria-current="page" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" (click)="setTab('Register')" [ngClass]="{'active': tab === 'Register'}" href="#">Register</a>
+        </li>
+    </ul>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <div *ngIf="tab === 'Login'">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input [(ngModel)]="data.email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input [(ngModel)]="data.password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <button type="submit" (click)="tryLogin()" class="btn btn-primary">Submit</button>
+    </div>
+    <div *ngIf="tab === 'Register'">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Name</label>
+            <input [(ngModel)]="data.name" type="text" class="form-control" id="exampleInputName1" aria-describedby="emailHelp"
+                placeholder="Enter name">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input [(ngModel)]="data.email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input [(ngModel)]="data.password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <button type="submit"  (click)="tryRegister()" class="btn btn-primary">Submit</button>
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+</div>

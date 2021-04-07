@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "frontendmid": {
+      "hosting": {
+        "FrontEndMidTest": [
+          "frontendmid"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "frontendmid"
+  }
+}

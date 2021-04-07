@@ -14,6 +14,9 @@ import {NgbCarouselModule} from '@ng-bootstrap/ng-bootstrap';
 import { SectionComponent } from './components/section/section.component';
 import { NewsFeedComponent } from './components/news-feed/news-feed.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ModalFormComponent } from './components/modal-form/modal-form.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,14 +25,17 @@ import { FooterComponent } from './components/footer/footer.component';
     BannerComponent,
     SectionComponent,
     NewsFeedComponent,
-    FooterComponent
+    FooterComponent,
+    ModalFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     OrigamiFormsModule,
     NgbModule,
-    NgbCarouselModule
+    NgbCarouselModule, 
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
